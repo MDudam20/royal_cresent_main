@@ -4580,13 +4580,13 @@ input[type="button"].btn-block {
 }
 .custom-menu li a {
     position: relative;
-    padding-left: 22px !important; 
+    padding-left: 22px !important; /* Space for the dot */
 }
 
 .custom-menu li a::before {
-    content: "•"; 
-    color: #c4af6b   ;
-    font-size: 24px; 
+    content: "•"; /* Unicode for the dot */
+    color: #c4af6b    ; /* Color of the dot */
+    font-size: 24px; /* Size of the dot */
     position: absolute;
     left: 0;
     top: 50%;
@@ -4633,7 +4633,7 @@ input[type="button"].btn-block {
     background-size: 100% 100%;
 }
 
- @media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
     .navbar-expand-sm>.container,
     .navbar-expand-sm>.container-fluid,
     .navbar-expand-sm>.container-sm,
@@ -4762,8 +4762,8 @@ input[type="button"].btn-block {
     }
     .navbar-expand-lg .navbar-toggler {
         display: none;
-    } 
-
+    }
+}
 
 @media (max-width: 1199.98px) {
     .navbar-expand-xl>.container,
@@ -4999,7 +4999,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
     color: #fff;
-} */
+}
 
 .card {
     position: relative;
@@ -21852,7 +21852,6 @@ ol.comment-list li .children li {
     opacity: 1;
     transition: all 0.5s;
 }
-
 .logo-header {
     display: table;
     float: left;
@@ -21902,7 +21901,6 @@ ol.comment-list li .children li {
         right: 50px;
         top: 14px;
 }
-
 @media only screen and (max-width: 980px){
     .logo-header-b img{
         right: 60px;
@@ -21963,9 +21961,9 @@ ol.comment-list li .children li {
     background: transparent;
     box-shadow: none;
 }
-/* .site-header.fixed .header-nav .nav>li>a{
+.site-header.fixed .header-nav .nav>li>a{
     padding: 32px 18px 32px 10px;
-} */
+}
 .site-header.fixed .main-bar {
     background: #fff; /* Change to desired color when fixed */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for fixed header */
@@ -22138,13 +22136,6 @@ ol.comment-list li .children li {
     background: #fff;
    
 }
-.navicon .menu{
-    position: absolute;
-    right: 120px;
-    top: 25px;
-    color: orange;
-    font-size: 22px;
-}
 
 .navicon span:nth-child(1) {
     top: 0px;
@@ -22186,8 +22177,6 @@ ol.comment-list li .children li {
 .header-nav {
     padding: 0;
 }
-
-
 
 @media only screen and (max-width: 991px) {
     .header-nav {
@@ -22241,8 +22230,6 @@ ol.comment-list li .children li {
     position: inherit;
 }
 
-  }
-}
 @media only screen and (max-width: 991px) {
     .header-nav .nav>li {
         border-bottom: 1px solid #eee;
@@ -22263,14 +22250,8 @@ ol.comment-list li .children li {
     text-transform: uppercase;
     line-height: 1;
     font-family: 'FuturaMdBTMedium', sans-serif;
-    text-decoration-line:none;
 }
 
-@media (min-width: 992px) {
-    .close-btn {
-        display: none; /* Hide the close button for desktop screens */
-    }
-}
 @media only screen and (max-width: 1199px) {
     .header-nav .nav>li>a {
         padding: 32px 6px 32px 6px;
@@ -22283,7 +22264,6 @@ ol.comment-list li .children li {
     margin-top: -3px;
     vertical-align: middle;
 }
-
 
 @media only screen and (max-width: 991px) {
     .header-nav .nav>li>a i {
@@ -22351,7 +22331,6 @@ ol.comment-list li .children li {
     }
 }
 
-
 .header-nav .nav>li .mega-menu li,
 .header-nav .nav>li .sub-menu li {
     position: relative;
@@ -22394,7 +22373,6 @@ ol.comment-list li .children li {
         font-weight: 700;
     }
 }
-
 
 .header-nav .nav>li .mega-menu li:hover>a,
 .header-nav .nav>li .sub-menu li:hover>a {
@@ -22460,7 +22438,6 @@ ol.comment-list li .children li {
     width: 15px;
 }
 
-
 @media only screen and (max-width: 991px) {
     .header-nav .nav>li .mega-menu>li>a {
         display: none;
@@ -22477,7 +22454,6 @@ ol.comment-list li .children li {
     width: 1px;
     height: 100%;
 }
-
 
 @media only screen and (max-width: 991px) {
     .header-nav .nav>li .mega-menu>li:after {
@@ -22531,14 +22507,12 @@ ol.comment-list li .children li {
     opacity: 1;
 }
 
-
 @media only screen and (max-width: 991px) {
     .header-nav .nav {
         float: none;
         padding: 0 20px;
     }
 }
-
 
 .header-nav .dlab-social-icon {
     display: none;
@@ -22558,7 +22532,6 @@ ol.comment-list li .children li {
     text-align: center;
     border-radius: 40px;
 }
-
 
 @media only screen and (max-width: 991px) {
     .header-nav .dlab-social-icon {
@@ -24831,7 +24804,11 @@ color: #000;
 
 
 /* Hide the close button on larger screens (desktop) */
-
+@media (min-width: 992px) {
+    .close-btn {
+        display: none; /* Hide the close button for desktop screens */
+    }
+}
 
 
 
