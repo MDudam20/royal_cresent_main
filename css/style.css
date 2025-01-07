@@ -26729,3 +26729,8 @@ height: 110px;
     left: 68px;
     transform: translate(-20%, -20%);
 }
+.sub-heading-a {
+    font-family: 'BrittanySignature' !important;
+    font-size: 24px !important;
+    line-height: 24px !important;
+}
