@@ -13762,7 +13762,7 @@ label.error {
     overflow: hidden;
 }
 
-.dlab-media img,
+
 .dlab-post-media img {
     width: 100%;
     height: auto;
@@ -13771,7 +13771,11 @@ label.error {
    /* border: 5px solid black; */
    border: 5px solid #EBA225;
 }
-
+.dlab-media img{
+    width: 400px;
+    height: 312px; 
+    border: 5px solid black;
+}
 .dlab-box-bg {
     overflow: hidden;
     background-size: cover;
