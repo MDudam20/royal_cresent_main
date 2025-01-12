@@ -34,6 +34,51 @@
     <!-- REVOLUTION SLIDER CSS -->
     <link rel="stylesheet" type="text/css" href="./vendor/revolution/revolution/css/revolution.min.css">
     <script src="https://kit.fontawesome.com/c80ce35b53.js" crossorigin="anonymous"></script>
+    <style>
+        .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img.luxury-pool {
+    width: 100%;
+    height: 400px; /* Match your previous settings */
+    display: none;
+}
+
+.carousel-images img.luxury-pool.active {
+    display: block;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 36%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: #216857; /* Match the vintage border color */
+}
+
+    </style>
 </head>
 
 <body id="bg">
@@ -480,7 +525,7 @@
                       <div class="section-head">
                         <h2 class="title wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">Projects Overview</h2>
                         <div class="border-image wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s"></div>
-                        <h4 class="mb-4 wow fadeInUp sub-project" data-wow-duration="2s" data-wow-delay="0.6s">Embrace a harmonious blend of urban convenience and serene living.</h4>
+                        <h4 class="mb-4 wow fadeInUp " data-wow-duration="2s" data-wow-delay="0.6s">Embrace a harmonious blend of urban convenience and serene living.</h4>
                         <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">PREMIUM LIVING. Experience spacious plots designed for high-end villas and luxury residences. Enjoy exclusive access to landscaped parks, a luxurious clubhouse, and thoughtfully designed privacy-focused layouts.</p>
                         <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                             Indulge in exquisite interiors that reflect sophistication and comfort. Each villa is a masterpiece, featuring spacious living areas, state-of-the-art kitchens, and lavish bedrooms – crafted to provide an unparalleled living experience.
@@ -490,9 +535,24 @@
                         </p>                   
                       </div>
                     </div>
-                    <div class="vintage-border wow fadeInRight"  data-wow-duration="2s" data-wow-delay="0.4s">
-                      <img src="images/royal/project-about.jpg" alt="Luxury Pool" class="luxury-pool">
+                    <div class="vintage-border wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s">
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="images/royal-final/acreside.webp" alt="Luxury Pool 1" class="luxury-pool active">
+                                <img src="images/royal-final/8Acresold.jpg" alt="Luxury Pool 2" class="luxury-pool ">
+                                <img src="images/royal-final/PodsElderly.webp" alt="Luxury Pool 3" class="luxury-pool">
+                                <img src="images/royal-final/KiddieKingdom.webp" alt="Luxury Pool 4" class="luxury-pool">
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" data-index="0"></span>
+                                <span class="indicator" data-index="1"></span>
+                                <span class="indicator" data-index="2"></span>
+                                <span class="indicator" data-index="3"></span>
+                            </div>
+                        </div>
                     </div>
+                    
+                    
                   </div>
             </section>
             
@@ -549,7 +609,7 @@
                                 <div class="item " data-index="0"><img src="images/royal-final/30acres.png" alt=""></div>
                                 <div class="item" data-index="1"><img src="images/royal-final/200villa.png" alt=""></div>
                                 <div class="item" data-index="2"><img src="images/background/luxurypool.png" alt=""></div>
-                                <div class="item" data-index="3"><img src="images/background/gymnasium.png" alt=""></div>
+                                <div class="item" data-index="3"><img src="images/royal-final/gym.png" alt=""></div>
                                 <div class="item" data-index="4"><img src="images/background/salonspa.png" alt=""></div>
                                 <div class="item" data-index="5"><img src="images/royal-final/senior.png" alt=""></div>
                                 <div class="item" data-index="6"><img src="images/royal-final/kids.png" alt=""></div>
@@ -619,7 +679,7 @@
                         Project Aerial View 
                     </h1>
                     <div class="border-image wow fadeInUp " data-wow-duration="2s" data-wow-delay="0.2s"></div>
-                    <h4 class="my-4 wow fadeInUp sub-project" data-wow-duration="2s" data-wow-delay="0.4s">Discover A Haven Where Breathtaking Land
+                    <h4 class="my-4 wow fadeInUp " data-wow-duration="2s" data-wow-delay="0.4s">Discover A Haven Where Breathtaking Land
                         Scapes Become A Part Of Your Everyday Life.</h4>
 
                 </div>
@@ -683,8 +743,8 @@
                             <div class="widget">
                                 <h5 class="footer-title">Contact Us</h5>
                                 <ul class="contact-info-bx">
-                                    <li><i class="las la-map-marker"></i><a href=""> Survey No. 113/2, Village Kasalkhand, Taluka Panvel, Nr. Amity University, Dist. Raigad.</a></li>
-                                    <li><i class="las la-map-marker"></i><a href="">Emperia C2, Savita Chemicals Road, T.T.C. Industrial Area, Turbhe, Navi Mumbai - 400705
+                                    <li><i class="las la-map-marker"></i><a href=""><strong>Site Address :</strong><br> Survey No. 113/2, Village Kasalkhand, Taluka Panvel, Nr. Amity University, Dist. Raigad.</a></li>
+                                    <li><i class="las la-map-marker"></i><a href=""><strong>Office Address :</strong><br> Emperia C2, Savita Chemicals Road, T.T.C. Industrial Area, Turbhe, Navi Mumbai - 400705
                                     </a></li>
                                     <li><i class="las la-phone-volume"></i><a href="tel:+91 80909 06067">+91 80909 06067</a></li>
                                     <li><i class="las la-envelope-open"></i><a href="mailto:sales@emperia.co.in">sales@emperia.co.in</a></li>
@@ -961,6 +1021,39 @@
 
 
 
+
+ </script>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".carousel-images .luxury-pool");
+    const indicators = document.querySelectorAll(".carousel-indicators .indicator");
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle("active", i === index);
+        });
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle("active", i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showSlide(currentIndex);
+    }
+
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener("click", () => {
+            currentIndex = index;
+            showSlide(currentIndex);
+        });
+    });
+
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000);
+});
 
  </script>
 </body>
