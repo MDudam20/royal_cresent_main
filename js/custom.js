@@ -46,7 +46,7 @@ var KingArchitect = function() {
         $('.header').css('height', '');
         var HeaderHeight = $('.header').height();
         $('.header').css('height', HeaderHeight);
-        if (screenWidth > 991) {
+        if (screenWidth > 2000) {
             $('.homedemo').find('.mega-menu').css('height', 'calc(100vh - ' + HeaderHeight + 'px)');
         }
     }
@@ -67,7 +67,7 @@ var KingArchitect = function() {
         });
 
 
-        if (screenWidth <= 991) {
+        if (screenWidth <= 2000) {
             jQuery('.navbar-nav > li > a, .sub-menu > li > a').unbind().on('click', function(e) {
                 if (jQuery(this).parent().hasClass('open')) {
                     jQuery(this).parent().removeClass('open');
@@ -575,9 +575,7 @@ jQuery(window).on('resize', function() {
     KingArchitect.resize();
 });
 /*  Window Resize END */
-
- // Lazy loading script
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const lazyElements = document.querySelectorAll('.lazy');
 
     const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
