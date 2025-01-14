@@ -22208,8 +22208,7 @@ ol.comment-list li .children li {
     padding: 0;
 }
 
-
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 991px) {
     .header-nav {
         overflow-y: scroll;
         position: fixed;
