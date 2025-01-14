@@ -575,3 +575,30 @@ jQuery(window).on('resize', function() {
     KingArchitect.resize();
 });
 /*  Window Resize END */
+
+ // Lazy loading script
+ document.addEventListener("DOMContentLoaded", function () {
+    const lazyElements = document.querySelectorAll('.lazy');
+
+    const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const element = entry.target;
+
+          if (element.tagName === 'IMG') {
+            element.src = element.getAttribute('data-src');
+          } else if (element.tagName === 'VIDEO') {
+            const sources = element.querySelectorAll('source');
+            sources.forEach(source => {
+              source.src = source.getAttribute('data-src');
+            });
+            element.load();
+          }
+          element.classList.remove('lazy');
+          observer.unobserve(element);
+        }
+      });
+    });
+
+    lazyElements.forEach(element => lazyLoadObserver.observe(element));
+  });
