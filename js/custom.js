@@ -600,3 +600,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     lazyElements.forEach(element => lazyLoadObserver.observe(element));
   });
+  document.getElementById('closeNavbar').addEventListener('click', function () {
+    const navbar = document.getElementById('navbarNavDropdown');
+    navbar.classList.remove('show'); // Remove Bootstrap's 'show' class to close the menu
+});
