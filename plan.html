@@ -186,9 +186,32 @@
     transform: scale(1.02); /* Slight scaling effect */
     transition: all 0.3s ease; /* Smooth hover transition */
 }
+@media (max-width: 1250px){
+    .part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+.full-screen-section::after {
+    width: 100%;
+    height: 0;
+    top: 60%;
+    left: 0;
+    border-top: 2px dotted black;
+}
+.full-screen-section::before {
+    width: 0;
+    height: 119%;
+    left: 50%;
+    top: 0;
+    border-left: 2px dotted black;
+}
 
+}
 /* Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .full-screen-section {
         grid-template-rows: repeat(4, 1fr); /* 4 rows */
         grid-template-columns: 1fr; /* Single column */
@@ -200,12 +223,19 @@
     }
 
     .part {
-        flex-direction: column; /* Stack sections vertically */
+        /* flex-direction: column;  */
+        display: grid;
+        border-bottom: 2px dotted #000;
     }
 
     .part .text-side,
     .image-side {
         width: 100%; /* Full width for both sections */
+    }
+    .image-side{
+        margin-top: 20px;
+        height:180px;
+      
     }
 }
 
@@ -468,28 +498,42 @@ Privacy-focused Layouts.
                         <!-- Part 2 -->
                         <div class="part">
                             <div class="text-side">
-                                <h2>Text for Part 2</h2>
-                                <p>Some descriptive text goes here.</p>
+                                <h2>FIRST FLOOR PLAN</h2>
+                                <ul>
+                                    <li>2 BEDROOMS</li>
+                                    <li>1 HALL </li>
+                                    <li>1 BALCONY</li>
+                                    <li>2 TOILETS</li>
+                                </ul>
                             </div>
-                            <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                            <div class="image-side" style="background-image: url('images/royal-floor/a1-first.png');"></div>
                         </div>
                         
                         <!-- Part 3 -->
                         <div class="part">
                             <div class="text-side">
-                                <h2>Text for Part 3</h2>
-                                <p>Some descriptive text goes here.</p>
+                                <h2>SECOND FLOOR PLAN</h2>
+                                <ul>
+                                    <li>2 BEDROOMS</li>
+                                    <li>1 HALL </li>
+                                    <li>1 BALCONY</li>
+                                    <li>2 TOILETS</li>
+                                </ul>
                             </div>
-                            <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                            <div class="image-side" style="background-image: url('images/royal-floor/a1-second.png');"></div>
                         </div>
                         
                         <!-- Part 4 -->
                         <div class="part">
                             <div class="text-side">
-                                <h2>Text for Part 4</h2>
-                                <p>Some descriptive text goes here.</p>
+                                <h2> TERRACE FLOOR PLAN</h2>
+                                <ul>
+                                    <li> TERRACE GARDENS</li>
+                                    <li> SEATING AREA </li>
+                                    
+                                </ul>
                             </div>
-                            <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                            <div class="image-side" style="background-image: url('images/royal-floor/a1-TERRACE.png');"></div>
                         </div>
                     </div>
                 </div>
@@ -502,7 +546,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">3d</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">A1 / 5 BHK (3d Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -521,34 +565,48 @@ Privacy-focused Layouts.
                                             <li>3 TOILETS</li>
                                         </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/a1-ground-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>2 BEDROOMS</li>
+                                            <li>1 HALL </li>
+                                            <li>1 BALCONY</li>
+                                            <li>2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/a1-first-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>SECOND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>2 BEDROOMS</li>
+                                            <li>1 HALL </li>
+                                            <li>1 BALCONY</li>
+                                            <li>2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/a1-second-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 4 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> TERRACE GARDENS</li>
+                                            <li> SEATING AREA </li>
+                                            
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/a1-TERRACE-3d.png');"></div>
                                 </div>
                             </div>
                         </div>
@@ -617,7 +675,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">PARCEL B1 4BHK (2d floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -627,37 +685,56 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li> 1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b1-grund-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 2 BEDROOMS</li>
+                                            <li> 1 HALL </li>
+                                            <li>  1 BALCONY</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b1-first-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>SECOND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li> 1 HALL </li>
+                                            <li>  1 BALCONY</li>
+                                            <li> 1 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b1-second-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 4 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>  TERRACE GARDENS</li>
+                                            <li> SEATING AREA</li>
+                                            
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b1-TERRACE-2d.png');"></div>
                                 </div>
                             </div>
                         </div>
@@ -669,7 +746,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">PARCEL B1 4BHK (3D floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -679,37 +756,56 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li> 1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b1-grund-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 2 BEDROOMS</li>
+                                            <li> 1 HALL </li>
+                                            <li>  1 BALCONY</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b1-first-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>SECOND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li> 1 HALL </li>
+                                            <li>  1 BALCONY</li>
+                                            <li> 1 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b1-second-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 4 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>  TERRACE GARDENS</li>
+                                            <li> SEATING AREA</li>
+                                            
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b1-TERRACE-3d.png');"></div>
                                 </div>
                             </div>
                         </div>
@@ -780,7 +876,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">PARCEL B2 4BHK (2D Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -791,37 +887,56 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li>1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b2-ground-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 2 BEDROOMS</li>
+                                            <li>1 HALL </li>
+                                            <li>  1 BALCONY</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b2-first-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> SECOND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li>1 HALL </li>
+                                            <li>  1 BALCONY</li>
+                                            <li> 1 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b2-second-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 4 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>  TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>  TERRACE GARDENS</li>
+                                            <li> SEATING AREA</li>
+                                            
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b2-TERRACE-2d.png');"></div>
                                 </div>
                             </div>
                         </div>
@@ -833,7 +948,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">PARCEL B2 4BHK (3D Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -843,37 +958,56 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li>1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b2-ground-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 2 BEDROOMS</li>
+                                            <li>1 HALL </li>
+                                            <li>  1 BALCONY</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b2-first-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> SECOND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li>1 HALL </li>
+                                            <li>  1 BALCONY</li>
+                                            <li> 1 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b2-second-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 4 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>  TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>  TERRACE GARDENS</li>
+                                            <li> SEATING AREA</li>
+                                            
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b2-TERRACE-3d.png');"></div>
                                 </div>
                             </div>
                         </div>
@@ -942,7 +1076,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">PARCEL B3 4BHK (2D Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -953,37 +1087,56 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li> 1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li>2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b3-ground-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 2 BEDROOMS</li>
+                                            <li> 1 HALL</li>
+                                            <li> 1 BALCONY</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b3-second-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>SECOND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li> 1 HALL</li>
+                                            <li> 1 BALCONY</li>
+                                            <li> 1 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b3-first-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 4 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>  TERRACE GARDENS</li>
+                                            <li>  SEATING AREA</li>
+                                            
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b3-TERRACE-2d.png');"></div>
                                 </div>
                             </div>
                         </div>
@@ -995,7 +1148,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">PARCEL B3 4BHK (3D Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -1005,37 +1158,56 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li> 1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li>2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b3-ground-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 2 BEDROOMS</li>
+                                            <li> 1 HALL</li>
+                                            <li> 1 BALCONY</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b3-first-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>SECOND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li> 1 BEDROOMS</li>
+                                            <li> 1 HALL</li>
+                                            <li> 1 BALCONY</li>
+                                            <li> 1 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b3-second-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 4 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>  TERRACE GARDENS</li>
+                                            <li>  SEATING AREA</li>
+                                            
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/b3-TERRACE-3d.png');"></div>
                                 </div>
                             </div>
                         </div>
@@ -1103,7 +1275,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">C1 3+3 Bhk (2D FLOOR PLANS)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -1113,38 +1285,45 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>1 BEDROOMS</li>
+                                            <li>1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c1-ground-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>2 BEDROOMS</li>
+                                            <li> 1 BALCONY</li>
+                                            
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c1-first-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>  TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>TERRACE GARDENS</li>
+                                            <li>SEATING AREA</li>
+                                          
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c1-TERRACE-2d.png');"></div>
                                 </div>
                                 
-                                <!-- Part 4 -->
-                                <div class="part">
-                                    <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
-                                    </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -1155,7 +1334,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">C1 3+3 Bhk (3D FLOOR PLANS)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -1165,38 +1344,45 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>1 BEDROOMS</li>
+                                            <li>1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c1-ground-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>2 BEDROOMS</li>
+                                            <li> 1 BALCONY</li>
+                                            
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c1-first-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>  TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>TERRACE GARDENS</li>
+                                            <li>SEATING AREA</li>
+                                          
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c1-TERRACE-3d.png');"></div>
                                 </div>
                                 
-                                <!-- Part 4 -->
-                                <div class="part">
-                                    <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
-                                    </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -1261,7 +1447,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">C2 3+3 BHK (2D Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -1271,38 +1457,45 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>1 BEDROOMS</li>
+                                            <li>1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c2-ground-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>2 BEDROOMS</li>
+                                            <li> 1 BALCONY</li>
+                                            
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c2-first-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>  TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>TERRACE GARDENS</li>
+                                            <li>SEATING AREA</li>
+                                          
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c2-TERRACE-2d.png');"></div>
                                 </div>
                                 
-                                <!-- Part 4 -->
-                                <div class="part">
-                                    <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
-                                    </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -1313,7 +1506,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">C2 3+3 BHK (3D Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -1323,38 +1516,45 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>1 BEDROOMS</li>
+                                            <li>1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c2-ground-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>2 BEDROOMS</li>
+                                            <li> 1 BALCONY</li>
+                                            
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c2-first-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>  TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>TERRACE GARDENS</li>
+                                            <li>SEATING AREA</li>
+                                          
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c2-TERRACE-3d.png');"></div>
                                 </div>
                                 
-                                <!-- Part 4 -->
-                                <div class="part">
-                                    <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
-                                    </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -1423,7 +1623,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">C3 3+3 BHK (3D Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -1433,38 +1633,45 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>1 BEDROOMS</li>
+                                            <li>1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c3-ground-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>2 BEDROOMS</li>
+                                            <li> 1 BALCONY</li>
+                                            
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c3-first-2d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>  TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>TERRACE GARDENS</li>
+                                            <li>SEATING AREA</li>
+                                          
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c3-TERRACE-2d.png');"></div>
                                 </div>
                                 
-                                <!-- Part 4 -->
-                                <div class="part">
-                                    <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
-                                    </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -1475,7 +1682,7 @@ Privacy-focused Layouts.
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenModalLabel">Full Screen Section</h5>
+                            <h5 class="modal-title" id="fullscreenModalLabel">C3 3+3 BHK (3D Floor Plan)</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -1485,38 +1692,45 @@ Privacy-focused Layouts.
                                 <!-- Part 1 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 1</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2> GROUND FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>1 BEDROOMS</li>
+                                            <li>1 HALL / DINNING AREA</li>
+                                            <li> 1 KITCHEN</li>
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c3-ground-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 2 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 2</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>FIRST FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>2 BEDROOMS</li>
+                                            <li> 1 BALCONY</li>
+                                            
+                                            <li> 2 TOILETS</li>
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c3-first-3d.png');"></div>
                                 </div>
                                 
                                 <!-- Part 3 -->
                                 <div class="part">
                                     <div class="text-side">
-                                        <h2>Text for Part 3</h2>
-                                        <p>Some descriptive text goes here.</p>
+                                        <h2>  TERRACE FLOOR PLAN</h2>
+                                        <ul>
+                                            <li>TERRACE GARDENS</li>
+                                            <li>SEATING AREA</li>
+                                          
+                                        </ul>
                                     </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
+                                    <div class="image-side" style="background-image: url('images/royal-floor/c3-TERRACE-3d.png');"></div>
                                 </div>
                                 
-                                <!-- Part 4 -->
-                                <div class="part">
-                                    <div class="text-side">
-                                        <h2>Text for Part 4</h2>
-                                        <p>Some descriptive text goes here.</p>
-                                    </div>
-                                    <div class="image-side" style="background-image: url('https://via.placeholder.com/500');"></div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>

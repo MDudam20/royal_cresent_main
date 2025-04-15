@@ -6339,6 +6339,7 @@ a.close.disabled {
     position: relative;
     flex: 1 1 auto;
     padding: 1rem;
+    overflow: auto;
 }
 
 .modal-footer {
@@ -6363,7 +6364,12 @@ a.close.disabled {
     height: 50px;
     overflow: scroll;
 }
-
+@media (min-width: 900px){
+    .modal-dialog {
+        max-width: 100% !important;
+     
+    }
+}
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 500px;
@@ -6390,13 +6396,13 @@ a.close.disabled {
 @media (min-width: 992px) {
     .modal-lg,
     .modal-xl {
-        max-width: 800px;
+        max-width: 100%;
     }
 }
 
 @media (min-width: 1200px) {
     .modal-xl {
-        max-width: 1140px;
+        max-width: 100%;
     }
 }
 
